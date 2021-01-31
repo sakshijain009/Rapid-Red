@@ -1,0 +1,64 @@
+<%- include('partials/header'); -%>
+
+<style type="text/css">
+
+@media only screen and (min-width:400px){
+.me{
+width:40%;
+}
+}
+
+@media only screen and (min-width:400px){
+..me{
+width:40%;
+}
+}
+
+@media only screen and (min-width:600px){
+.me{
+width:40%;
+}
+}
+@media only screen and (min-width:500px){
+.me{
+width:35%;
+}
+}
+@media only screen and (min-width:700px){
+.me{
+width:30%;
+}
+}
+@media only screen and (min-width:800px){
+.me{
+width:16%;
+}
+}
+</style>
+<body><br>
+
+    <!--------------Header Ends----------------------->
+ <section class="container">
+ 	<br>
+ 	<h1 style="margin-left: 10px;">Patient Requests</h1><hr><br><br>
+
+     <!------Horizontal Card----------------->
+  <% for(var i=0; i< patients.length; i++) {%>
+  <main class="container">
+  	<div class="shadow lg-3 mb-5 bg-white rounded">
+		<div class="card" style="padding:20px">
+  			<h5 class="card-header">Patient Details</h5>
+  			<div class="card-body">
+  			<img src="images/save.jpeg"  align="right" class="me">
+    		<h5 class="card-title">Name:&nbsp;<%= patients[i].name %> </h5>
+    		<p class="card-text">Email: <%= patients[i].email %><br>Contact: <%= patients[i].number %><br>Blood Group Required: <%= patients[i].bloodgroup %><br>Date:&nbsp;<%= patients[i].date %>
+		</div>
+  </div>
+</div>
+</main>
+<% } %>
+<!---------------Horizontal Card Ends------------->
+</section>
+
+
+<%- include('partials/footer'); -%>

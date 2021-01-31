@@ -1,0 +1,136 @@
+<%- include('partials/header'); -%>
+<style type="text/css">
+	#about{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-text
+{
+  text-align: justify;
+  color: #8f8f8f;
+}
+.form{
+  background-color:#ffffff;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  margin-top: 5vmin;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5vmin;
+}
+
+.part1{
+  width: 80%;
+  padding: 20px;
+  margin-right: 20px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.part2{
+  padding: 20px;
+}
+.form1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form1 input,textarea{
+  border-radius: 5px;
+  border-style: double;
+  padding: 4px;
+}
+
+.form1 input, textarea, button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.imgg{
+  height: 340px;
+  width: 70%;
+  margin-left: 14%;
+}
+@media only screen and (max-width: 768px) {
+  .form{
+    display: flex;
+  flex-direction: column;
+  }
+  }
+</style>
+
+
+<section class="white-section" id="about" style="font-family:Montserrat;text-align: center;">
+
+    <h2 class="section-heading">About Rapid Red</h2>
+    <p style="font-family: 'Redressed', cursive;font-size: 21px;color: grey;">Your little effort can give others second chance to live life</p>
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-lg-6 mb-4"> 
+                <div class="card"> 
+                    <img class="card-img-top" src="" alt=""> 
+  
+                    <div class="card-body"> 
+                        <h3 class="card-title" style="font-family: 'Dancing Script', cursive;">Why was it required?</h3><br><br>
+                        <img src="http://www.pngmart.com/files/7/Blood-Donation-PNG-Clipart.png"; width="70%"><br><br><br>
+                        <p class="card-text"> 
+                          
+                            The reason is simple…it helps save lives. Blood is in constant demand for accident victims, surgery and cancer patients and more.In fact, every two seconds of every day, someone needs blood. Since blood cannot be manufactured outside the body and has a limited shelf life, the supply must constantly be replenished and it should reach the patients on time.
+                        </p> <br><br>
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col-lg-6 mb-4"> 
+                <div class="card"> 
+                    <img class="card-img-top" src="" alt=""> 
+  
+                    <div class="card-body"> 
+                        <h3 class="card-title" style="font-family: 'Dancing Script', cursive;">How does it work?</h3><br>
+                        <img src="http://www.pngmart.com/files/7/Blood-Donation-PNG-Pic.png"; width="70%"><br><br>
+                        <p class="card-text"> 
+                            Rapid Red ensures that the blood requirements of patient are fulfilled on time and blood banks are able to contact them regardless of the area they are in.
+                            Objectives:
+                            <ul class="card-text" >
+							<li>Safe and Adequate Blood Supplies</li>
+							<li>Reduced Turnaround Time</li>
+							<li>Preventing Wastage of Blood</li>
+							<li>Networking of Blood Banks</li>
+							</ul>
+
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    
+
+    
+  </section>
+  <div class="container" style="font-family:Montserrat;text-align: center;">
+		<div class="form container-fluid">
+			<div class="part1">
+				<form class="form1 container-fluid" method="post" action="/contact">
+					<h4 style="color: black; text-align: center;font-family: 'Dancing Script', cursive;">Fill your details</h4>
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="email" placeholder="example@gmail.com" required>
+					<textarea placeholder="Any Suggestions" rows="4" required name="suggestions"></textarea>
+					<button type="submit" class="button buttony">Submit</button>
+				</form>
+			</div>
+			<div class="part2">
+				<h3 class="head1">Contact Us</h3>
+				<p class="head2">You can email us whatever you feel about the page, any suggestions or improvement that you might want to convey.</p>
+				<img src="http://www.pngmart.com/files/7/Blood-Donation-PNG-Transparent.png" class="imgg"><hr>
+				
+			</div>
+		</div>
+	</div>
+
+
+<%- include('partials/footer'); -%>

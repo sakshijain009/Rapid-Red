@@ -1,0 +1,64 @@
+<%- include('partials/header'); -%>
+
+<style type="text/css">
+
+@media only screen and (min-width:400px){
+.me{
+width:40%;
+}
+}
+
+@media only screen and (min-width:400px){
+..me{
+width:40%;
+}
+}
+
+@media only screen and (min-width:600px){
+.me{
+width:40%;
+}
+}
+@media only screen and (min-width:500px){
+.me{
+width:35%;
+}
+}
+@media only screen and (min-width:700px){
+.me{
+width:30%;
+}
+}
+@media only screen and (min-width:800px){
+.me{
+width:16%;
+}
+}
+</style>
+<body><br>
+
+    <!--------------Header Ends----------------------->
+ <section class="container">
+ 	<br>
+ 	<h1 style="margin-left: 10px;">Blood Banks Registered With Us</h1><hr><br><br>
+
+     <!------Horizontal Card----------------->
+  <% for(var i=0; i< bloodBank.length; i++) {%>
+  <main class="container">
+  	<div class="shadow lg-3 mb-5 bg-white rounded">
+		<div class="card" style="padding:20px">
+  			<h5 class="card-header">Blood Bank Details</h5>
+  			<div class="card-body">
+  			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5MKxuKS3lUNnnzMWw1oBakhAVq-KLHbkEOH5zp15Mc75kYo&s"  align="right" class="me">
+    		<h5 class="card-title">Name:&nbsp;<%= bloodBank[i].name %> </h5>
+    		<p class="card-text">Email: <%= bloodBank[i].email %><br>Address: <%= bloodBank[i].address %><br>State: <%= bloodBank[i].state %><br>Country: <%= bloodBank[i].country %><br>Pin: <%= bloodBank[i].pincode %></p>
+		</div>
+  </div>
+</div>
+</main>
+<% } %>
+<!---------------Horizontal Card Ends------------->
+</section>
+
+
+<%- include('partials/footer'); -%>
